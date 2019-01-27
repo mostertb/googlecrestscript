@@ -725,7 +725,7 @@ function getMarketJson(itemId, regionId, orderType)
     orderType = orderType.toLowerCase();
 
     // Setup variables for the market endpoint we want
-    var marketUrl = 'https://esi.tech.ccp.is/latest/markets/' + regionId + '/orders/';
+    var marketUrl = 'https://esi.evetech.net/latest/markets/' + regionId + '/orders/';
     var parameterUrl = '?order_type=' + orderType + '&type_id=' + itemId;
     Logger.log('Pulling market orders from url: ' + marketUrl + parameterUrl)
     var fullUrl = marketUrl + parameterUrl;
